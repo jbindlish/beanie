@@ -189,7 +189,7 @@ export default function App(){
 
                         {/* Footer */}
                         <div className="footer">
-                            Jai Bindlish Real History Project — design spin off from late-90s eBay. No affiliation with Ty Inc. or eBay.
+                            Jai Bindlish RHP — design spinmed off from late-90s eBay. No affiliation with Ty Inc. or eBay.
                         </div>
                     </>
                 )}
@@ -257,7 +257,7 @@ The Beanie Baby fad was a borderline insane national speculative bubble, fueled 
                             <p>After 2000, Sales of Beanie Babies decline and value collapses (Benes), families who thought that they were long term investments were now left with next to useless plushies, after years of pointless speculation. This marked the end of the speculative bubble we see so often in the United States – built up by “hype”, crashed down to reality. Some examples include the dot-com bubble and the housing market bubble (see: the Great Recession). Overall, people realized that resold toys don’t necessarily sell for thousands of dollars.</p>
                             <p>Long term and overall, eBay becomes a cornerstone of the US economy regarding e-commerce, eventually contributing to the dot-com speculative bubble too. Beanie Babies are left as just a crazy fad in the 90s.</p>
 
-                        <h3>References</h1>
+                        <h3>References</h3>
                         </article>
                         
                 )}
