@@ -98,7 +98,7 @@ export default function App(){
                         <div className="logo" aria-label="eBay throwback">
                             <span className="B">B</span><span className="b">b</span><span className="a">a</span><span className="y">y</span>
                         </div>
-                        <div className="slogan">The world&apos;s online marketplace — based in the late 1990s</div>
+                        <div className="slogan">The world&apos;s online Beanie Baby marketplace - Jai Bindlish&apos;s Real History Project INFO IN LEARN SECTION</div>
                     </div>
                 </div>
                 <div className="nav">
