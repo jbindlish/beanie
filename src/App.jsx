@@ -16,13 +16,13 @@ const DATA = [
     },
 
     // ORIGINAL NINE (1993)
-    { id:'brownie-cubbie', name:'Brownie/Cubbie', img:'https://placehold.co/160x120/8B4513/ffffff?text=Brownie/Cubbie', category:'Bear', releaseYear:1993, peakYear:1997, peakPriceUSD:1500, currentPriceUSD:12, rarity:'Original 9 / Name Change',
-        fun:["Brownie was one of the original nine Beanie Babies released in 1993. It was later renamed 'Cubbie', a common practice by Ty that created accidental early rarities."],
-        notes:"Early 1st generation tags are required for peak valuations."
+    { id:'brownie-cubbie', name:'Brownie/Cubbie', img:'https://www.90stoys.com/app/uploads/2025/07/cubbie-the-brown-bear.png', category:'Bear', releaseYear:1993, peakYear:1997, peakPriceUSD:20000, currentPriceUSD:7, rarity:'Original 9 / Name Change',
+        fun:["Brownie an original 9 Beanie Baby. The name change caused scarcity."],
+        notes:"Tags are actually really important to valuations - without tag, your Baby is worth nothing"
     },
-    { id:'patti-magenta', name:'Patti (Magenta)', img:'https://placehold.co/160x120/cc0066/ffffff?text=Magenta+Patti', category:'Platypus', releaseYear:1993, peakYear:1997, peakPriceUSD:900, currentPriceUSD:10, rarity:'Original 9 / Color Variant',
-        fun:["Patti was one of the original nine Beanie Babies. It was first released in Magenta, then Raspberry, and finally the common Fuchsia, making the Magenta version the rarest."],
-        notes:"The original Magenta color is much rarer than later versions."
+    { id:'patti-magenta', name:'Patti (Magenta)', img:'https://i0.wp.com/beaniepedia.com/beanies/files/2021/12/pattimagenta.jpeg?fit=350%2C350&ssl=1', category:'Platypus', releaseYear:1993, peakYear:1997, peakPriceUSD:8000, currentPriceUSD:160, rarity:'Original 9 / Color Change',
+        fun:["Patti was an original nine Beanie Baby. It went from Magenta, Raspberry, Fuchsia, having the color scarcity thing again."],
+        notes:"Im beginning to think it is intentional all these changes caused increase in demand... Magenta was much more valuable than the others."
     },
     { id:'legs-frog', name:'Legs', img:'https://placehold.co/160x120/008000/ffffff?text=Legs+Frog', category:'Frog', releaseYear:1993, peakYear:1997, peakPriceUSD:500, currentPriceUSD:8, rarity:'Original 9',
         fun:["Legs was one of the original nine Beanie Babies introduced in 1993."],
