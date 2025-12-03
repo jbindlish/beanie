@@ -75,7 +75,7 @@ export default function App(){
 
     const NavBtn = ({ id, children }) => (
         <button
-            className={`nav-btn ${id === 'browse' ? 'blue' : id === 'categories' ? 'yellow' : id === 'sell' ? 'red' : id === 'my-ebay' ? 'green' : 'nav-learn'}`}
+            className={`nav-btn ${id === 'browse' ? 'blue' : id === 'categories' ? 'yellow' : id === 'sell' ? 'red' : id === 'my-bbay' ? 'green' : 'nav-learn'}`}
             onClick={() => setPage(id)}
             aria-current={page === id ? 'page' : undefined}
             style={page === id ? { outline: '3px solid rgba(0,0,0,0.08)' } : {}}
@@ -106,7 +106,7 @@ export default function App(){
                         <NavBtn id="browse">Browse</NavBtn>
                         <NavBtn id="categories">Categories</NavBtn>
                         <NavBtn id="sell">Sell</NavBtn>
-                        <NavBtn id="my-ebay">My eBay</NavBtn>
+                        <NavBtn id="my-bbay">My BBay</NavBtn>
                         <div style={{flex:1}} />
                         <div style={{alignSelf:'center'}}>
                             <button className="nav-learn" onClick={() => setPage('learn')} style={{background:'transparent', border:'none', cursor:'pointer', color:'#222', textDecoration: page==='learn' ? 'underline' : 'none'}}>Learn</button>
@@ -189,7 +189,7 @@ export default function App(){
 
                         {/* Footer */}
                         <div className="footer">
-                            Jai Bindlish RHP — design spinmed off from late-90s eBay. No affiliation with Ty Inc. or eBay.
+                            Jai Bindlish RHP — design spinned off from late-90s eBay. No relation with Ty Inc. or eBay - school project.
                         </div>
                     </>
                 )}
@@ -213,17 +213,17 @@ export default function App(){
                 {page === 'sell' && (
                     <div style={{maxWidth:900, margin:'2rem auto', padding:'0 1rem'}}>
                         <h1>Sell</h1>
-                        <p>Placeholder Sell page — describe how to list an item here, or wire up a form to accept a new listing.</p>
+                        <p>Go to Learn to access Supplementary Material! Go to my Bbay for themes/thinking skills.</p>
                         <div style={{marginTop:12}}>
                             <button className="btn" onClick={() => showMessage('Sell flow not implemented in this demo')}>Start listing</button>
                         </div>
                     </div>
                 )}
 
-                {/* Page: My eBay */}
-                {page === 'my-ebay' && (
+                {/* Page: My BBay */}
+                {page === 'my-bbay' && (
                     <div style={{maxWidth:900, margin:'2rem auto', padding:'0 1rem'}}>
-                        <h1>My eBay</h1>
+                        <h1>My Bbay</h1>
                         <h2>Themes</h2>
                         <p>Theme 2: Work, Exchange, and Technology - This theme focuses on the factors behind the development of systems of economic exchange, particularly the role of technology, economic markets, and government.</p>
                         <p>Theme 2 is the one of the most fitting for this project because Beanie Babies took an immense effect on how e-commerce evolved and adapted. The analysis shows how the fad radicalized many American families to seek “investments” in these stuffed animal toys, anticipating a large increase in value as they get more in demand and less in supply. This project exemplifies the “speculative culture” of economics – directly effecting how different products are viewed and sold in the United States. Complete with deep analysis on the rise of E-commerce and how that affected economy, this website gives an overview of the ripple effects of Beanie Babies.</p>
