@@ -224,7 +224,8 @@ export default function App(){
                 {page === 'my-ebay' && (
                     <div style={{maxWidth:900, margin:'2rem auto', padding:'0 1rem'}}>
                         <h1>My eBay</h1>
-                        <p>Placeholder for My eBay — saved items, bids, and account info would appear here.</p>
+                        <p>Theme 2: Work, Exchange, and Technology - This theme focuses on the factors behind the development of systems of economic exchange, particularly the role of technology, economic markets, and government.</p>
+                        <p>Theme 2 is the one of the most fitting for this project because Beanie Babies took an immense effect on how e-commerce evolved and adapted. The analysis shows how the fad radicalized many American families to seek “investments” in these stuffed animal toys, anticipating a large increase in value as they get more in demand and less in supply. This project exemplifies the “speculative culture” of economics – directly effecting how different products are viewed and sold in the United States. Complete with deep analysis on the rise of E-commerce and how that affected economy, this website gives an overview of the ripple effects of Beanie Babies.</p>
                     </div>
                 )}
 
