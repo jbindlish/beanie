@@ -16,7 +16,7 @@ const DATA = [
     },
 
     // ORIGINAL NINE (1993)
-    { id:'brownie-cubbie', name:'Brownie/Cubbie', img:'https://www.90stoys.com/app/uploads/2025/07/cubbie-the-brown-bear.png', category:'Bear', releaseYear:1993, peakYear:1997, peakPriceUSD:20000, currentPriceUSD:7, rarity:'Original 9 / Name Change',
+    { id:'brownie-cubbie', name:'Brownie/Cubbie', img:'https://i0.wp.com/beaniepedia.com/beanies/files/2019/01/brownie.jpg', category:'Bear', releaseYear:1993, peakYear:1997, peakPriceUSD:20000, currentPriceUSD:7, rarity:'Original 9 / Name Change',
         fun:["Brownie an original 9 Beanie Baby. The name change caused scarcity."],
         notes:"Tags are actually really important to valuations - without tag, your Baby is worth nothing"
     },
