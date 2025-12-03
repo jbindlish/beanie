@@ -1,30 +1,51 @@
 import React, { useMemo, useState } from 'react'
 
 const DATA = [
-    { id:'princess-diana-bear', name:'Princess (Diana Bear)', img:'https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1000w,f_avif,q_auto:eco,dpr_2/rockcms/2022-08/princess-diana-purple-beanie-baby-te-220803-0b9792.jpg', category:'Bear', releaseYear:1997, peakYear:1998, peakPriceUSD:45000, currentPriceUSD:25, rarity:'Hype Icon',
-        fun:["This toy was released as commemerative of Princess Diana's death. The shipments were limited - only 12 toys per store, driving up demand immensely. One of the signature Beanie Babies."],
-        notes:"The peak was derived from headlines and other potential exaggerated estimates - real prices might have been lower."
-    },
-    { id:'peanut-royal-blue', name:'Peanut (Royal Blue)', img:'https://placehold.co/160x120/003399/ffffff?text=Blue+Peanut', category:'Elephant', releaseYear:1995, peakYear:1998, peakPriceUSD:3000, currentPriceUSD:40, rarity:'Color Variant',
-        fun:["The royal blue version of Peanut the Elephant was retired quickly, replaced by a lighter blue version. Only 2,000 royal blue Peanuts were believed to exist, making it a key early rarity."],
-        notes:"Its high peak value was primarily due to the short production run and distinct color."
-    },
-    { id:'brownie-cubbie', name:'Brownie/Cubbie', img:'https://placehold.co/160x120/8B4513/ffffff?text=Brownie/Cubbie', category:'Bear', releaseYear:1993, peakYear:1997, peakPriceUSD:1500, currentPriceUSD:12, rarity:'Name Change',
-        fun:["Brownie was one of the original nine Beanie Babies released in 1993. It was later renamed 'Cubbie', a common practice by Ty that created accidental early rarities."],
-        notes:"Early 1st generation tags are required for peak valuations."
-    },
-    { id:'patti-magenta', name:'Patti (Magenta)', img:'https://placehold.co/160x120/cc0066/ffffff?text=Magenta+Patti', category:'Platypus', releaseYear:1993, peakYear:1997, peakPriceUSD:900, currentPriceUSD:10, rarity:'Color Variant',
-        fun:["Patti was one of the original nine Beanie Babies. It was first released in Magenta, then Raspberry, and finally the common Fuchsia, making the Magenta version the rarest."],
-        notes:"Another rarity created by an early color change."
-    },
-    { id:'garcia-bear', name:'Garcia', img:'https://placehold.co/160x120/008000/ffffff?text=Garcia+Bear', category:'Bear', releaseYear:1996, peakYear:1998, peakPriceUSD:1000, currentPriceUSD:18, rarity:'Tie-Dye',
-        fun:["Named after the Grateful Dead's Jerry Garcia, this bear's chaotic tie-dye pattern meant no two were exactly alike, appealing to collectors seeking unique variants."],
-        notes:"A popular bear whose value was driven by uniqueness and pop-culture tie-in."
-    },
-    { id:'nana-bongo', name:'Nana/Bongo', img:'https://placehold.co/160x120/8B4513/ffffff?text=Nana/Bongo', category:'Monkey', releaseYear:1995, peakYear:1997, peakPriceUSD:800, currentPriceUSD:9, rarity:'Name Change',
-        fun:["First released as 'Nana' the Monkey, the name was changed to 'Bongo' because 'Nana' was deemed too similar to 'Nannerz'. This change created a brief, valuable production run."],
-        notes:"Similar to Brownie/Cubbie, a name change manufactured scarcity."
-    },
+    // 1. Brownie (later Cubbie) - Kept from your list
+    { id:'brownie-cubbie', name:'Brownie/Cubbie', img:'https://placehold.co/160x120/8B4513/ffffff?text=Brownie/Cubbie', category:'Bear', releaseYear:1993, peakYear:1997, peakPriceUSD:1500, currentPriceUSD:12, rarity:'Original 9 / Name Change',
+        fun:["Brownie was one of the original nine Beanie Babies released in 1993. It was later renamed 'Cubbie', a common practice by Ty that created accidental early rarities."],
+        notes:"Early 1st generation tags are required for peak valuations."
+    },
+    // 2. Patti (Magenta) - Kept from your list
+    { id:'patti-magenta', name:'Patti (Magenta)', img:'https://placehold.co/160x120/cc0066/ffffff?text=Magenta+Patti', category:'Platypus', releaseYear:1993, peakYear:1997, peakPriceUSD:900, currentPriceUSD:10, rarity:'Original 9 / Color Variant',
+        fun:["Patti was one of the original nine Beanie Babies. It was first released in Magenta, then Raspberry, and finally the common Fuchsia, making the Magenta version the rarest."],
+        notes:"The original Magenta color is much rarer than later versions."
+    },
+    // 3. Legs (Added)
+    { id:'legs-frog', name:'Legs', img:'https://placehold.co/160x120/008000/ffffff?text=Legs+Frog', category:'Frog', releaseYear:1993, peakYear:1997, peakPriceUSD:500, currentPriceUSD:8, rarity:'Original 9',
+        fun:["Legs was one of the original nine Beanie Babies introduced in 1993."],
+        notes:"Value depends heavily on 1st or 2nd generation tags."
+    },
+    // 4. Squealer (Added)
+    { id:'squealer-pig', name:'Squealer', img:'https://placehold.co/160x120/ffc0cb/ffffff?text=Squealer+Pig', category:'Pig', releaseYear:1993, peakYear:1997, peakPriceUSD:350, currentPriceUSD:6, rarity:'Original 9',
+        fun:["Squealer the Pig was part of the very first wave of Beanie Babies released."],
+        notes:"Early versions have a brown nose and thin tail."
+    },
+    // 5. Flash (Added)
+    { id:'flash-dolphin', name:'Flash', img:'https://placehold.co/160x120/00bfff/ffffff?text=Flash+Dolphin', category:'Dolphin', releaseYear:1993, peakYear:1997, peakPriceUSD:400, currentPriceUSD:7, rarity:'Original 9',
+        fun:["Flash the Dolphin was one of the few aquatic animals in the initial release."],
+        notes:"No known variants; rarity based purely on early tag generation."
+    },
+    // 6. Splash (Added)
+    { id:'splash-whale', name:'Splash', img:'https://placehold.co/160x120/000080/ffffff?text=Splash+Whale', category:'Whale', releaseYear:1993, peakYear:1997, peakPriceUSD:550, currentPriceUSD:9, rarity:'Original 9',
+        fun:["Splash the Whale was one of the largest animals in the 1993 set."],
+        notes:"The earliest versions are considered the most valuable."
+    },
+    // 7. Speckles (Added)
+    { id:'speckles-leopard', name:'Speckles', img:'https://placehold.co/160x120/8b4513/ffffff?text=Speckles+Leopard', category:'Leopard', releaseYear:1993, peakYear:1997, peakPriceUSD:600, currentPriceUSD:10, rarity:'Original 9',
+        fun:["Speckles the Leopard was part of the first nine and had a pattern that made each one slightly unique."],
+        notes:"An uncommon leopard variant."
+    },
+    // 8. Pinchers (Added)
+    { id:'pinchers-lobster', name:'Pinchers', img:'https://placehold.co/160x120/ff0000/ffffff?text=Pinchers+Lobster', category:'Lobster', releaseYear:1993, peakYear:1997, peakPriceUSD:750, currentPriceUSD:11, rarity:'Original 9',
+        fun:["Pinchers was the only crustacean in the original release."],
+        notes:"Later versions are lighter red; the original is darker/maroon."
+    },
+    // 9. Spot (Added)
+    { id:'spot-dog', name:'Spot', img:'https://placehold.co/160x120/999999/ffffff?text=Spot+Dog', category:'Dog', releaseYear:1993, peakYear:1997, peakPriceUSD:650, currentPriceUSD:10, rarity:'Original 9',
+        fun:["Spot the Dog was initially produced without a spot, making the 'no-spot' version a major rarity within the Original 9."],
+        notes:"The true rarity is the version with NO spot."
+    },
 ];
 
 const categories = ['All', ...Array.from(new Set(DATA.map(d => d.category)))];
