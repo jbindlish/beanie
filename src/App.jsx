@@ -96,7 +96,7 @@ export default function App(){
                 <div className="wrap">
                     <div className="header-top">
                         <div className="logo" aria-label="eBay throwback">
-                            <span className="e">e</span><span className="b">b</span><span className="a">a</span><span className="y">y</span>
+                            <span className="B">B</span><span className="b">b</span><span className="a">a</span><span className="y">y</span>
                         </div>
                         <div className="slogan">The world&apos;s online marketplace — based in the late 1990s</div>
                     </div>
