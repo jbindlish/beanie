@@ -35,7 +35,7 @@ const sorts = [
     { id: 'current', label: 'Current Price' },
     { id: 'year', label: 'Release Year' },
 ];
-const money = n => n.toLocaleString(undefined, { style:'currency', currency:'USD', maximumFractionDigits:0 });
+const money = n => n.toLocaleString(undefined, { style:'currency', currency:'USD', maximumFractionDigits:2 });
 const pctDrop = (p, c) => p ? Math.max(0, Math.min(100, Math.round(((p - c) / p) * 100))) : 0;
 
 export default function App(){
