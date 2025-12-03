@@ -2,17 +2,17 @@ import React, { useMemo, useState } from 'react'
 
 const DATA = [
     // KEY LATER RARITIES (Hype Icons & Variants)
-    { id:'princess-diana-bear', name:'Princess (Diana Bear)', img:'https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1000w,f_avif,q_auto:eco,dpr_2/rockcms/2022-08/princess-diana-purple-beanie-baby-te-220803-0b9792.jpg', category:'Bear', releaseYear:1997, peakYear:1998, peakPriceUSD:45000, currentPriceUSD:25, rarity:'Hype Icon',
+    { id:'princess-diana-bear', name:'Princess (Diana Bear)', img:'https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1000w,f_avif,q_auto:eco,dpr_2/rockcms/2022-08/princess-diana-purple-beanie-baby-te-220803-0b9792.jpg', category:'Bear', releaseYear:1997, peakYear:1998, peakPriceUSD:10000, currentPriceUSD:25, rarity:'Icon',
         fun:["This toy was released as commemerative of Princess Diana's death. The shipments were limited - only 12 toys per store, driving up demand immensely. One of the signature Beanie Babies."],
         notes:"The peak was derived from headlines and other potential exaggerated estimates - real prices might have been lower."
     },
-    { id:'peanut-royal-blue', name:'Peanut (Royal Blue)', img:'https://tycollector.com/beanies/bb-images/peanut-4062-1.jpg', category:'Elephant', releaseYear:1995, peakYear:1997, peakPriceUSD:3000, currentPriceUSD:40, rarity:'Color Variant',
+    { id:'peanut-royal-blue', name:'Peanut (Royal Blue)', img:'https://tycollector.com/beanies/bb-images/peanut-4062-1.jpg', category:'Elephant', releaseYear:1995, peakYear:1997, peakPriceUSD:1500, currentPriceUSD:500, rarity:'Color Change',
         fun:["The royal blue version of Peanut the Elephant was retired after a few months - making it in high demand for collectors to get that rare toy."],
         notes:"Its peak value can mostly be attributed to the color change."
     },
-    { id:'nana-bongo', name:'Nana/Bongo', img:'https://placehold.co/160x120/8B4513/ffffff?text=Nana/Bongo', category:'Monkey', releaseYear:1995, peakYear:1997, peakPriceUSD:800, currentPriceUSD:9, rarity:'Name Change',
-        fun:["First released as 'Nana' the Monkey, the name was changed to 'Bongo' because 'Nana' was deemed too similar to 'Nannerz'. This change created a brief, valuable production run."],
-        notes:"Similar to Brownie/Cubbie, a name change manufactured scarcity."
+    { id:'nana-bongo', name:'Nana/Bongo', img:'https://www.sell2bbnovelties.com/mm5/beanies/nana.jpg', category:'Monkey', releaseYear:1995, peakYear:1997, peakPriceUSD:4000, currentPriceUSD:20, rarity:'Name Change',
+        fun:["Name change from Nana to Bongo due to name disputes. Created a scarcity of those wanting the rare Nana type."],
+        notes:"Could they have done this intentionally to create demand...?"
     },
 
     // ORIGINAL NINE (1993)
