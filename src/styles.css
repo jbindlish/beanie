@@ -33,7 +33,7 @@ a:visited{ color:var(--visited); }
   font: 700 32px/1 Arial, Helvetica, sans-serif;
   letter-spacing: -1px;
 }
-.logo .e{ color:#e53238; }   /* red */
+.logo .B{ color:#e53238; }   /* red */
 .logo .b{ color:#0064d2; }   /* blue */
 .logo .a{ color:#f5af02; }   /* yellow */
 .logo .y{ color:#86b817; }   /* green */
