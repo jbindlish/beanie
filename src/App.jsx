@@ -255,6 +255,37 @@ export default function App(){
                         <p>Long term and overall, eBay becomes a cornerstone of the US economy regarding e-commerce, eventually contributing to the dot-com speculative bubble too. Beanie Babies are left as just a crazy fad in the 90s.</p>
 
                         <h3>References</h3>
+                        
+                        <ul style={{listStyleType: 'disc', margin: '1em 0 0 18px', padding: 0}}>
+                            <li>
+                                Benes, Ross. “The End is Coming! The End is Coming!” <em>History News Network</em>, 1 Apr. 2025.
+                                <a href="https://www.historynewsnetwork.org/article/the-end-is-coming-the-end-is-coming" target="_blank" rel="noopener noreferrer">https://www.historynewsnetwork.org/article/the-end-is-coming-the-end-is-coming</a>. Accessed 2 Dec. 2025.
+                            </li>
+                            <li>
+                                Conley, Meg. “My Mother Risked It All on the Beanie Baby Boom.” <em>Pocket Observatory</em>, 31 Dec. 2023.
+                                <a href="https://www.pocketobservatory.org/my-mother-risked-it-all-on-the-beanie-baby-boom/" target="_blank" rel="noopener noreferrer">www.pocketobservatory.org/my-mother-risked-it-all-on-the-beanie-baby-boom/</a>. Accessed 2 Dec. 2025.
+                            </li>
+                            <li>
+                                Johnson, James. “Ty Classics: The Original 9 Beanie Babies That Started it All.” <em>Ty Store</em>.
+                                <a href="https://shop.ty.com/blog?lang=en&title=ty-classics-the-original-9-beanie-babies-that-started-it-all&srsltid=AfmBOopsq_P0CHrGGhcjvrS3wrTpcODwRZaLMFHkF2V-NeVaKw3S-6DC" target="_blank" rel="noopener noreferrer">https://shop.ty.com/blog?lang=en&title=ty-classics-the-original-9-beanie-babies-that-started-it-all&srsltid=AfmBOopsq_P0CHrGGhcjvrS3wrTpcODwRZaLMFHkF2V-NeVaKw3S-6DC</a>. Accessed 2 Dec. 2025.
+                            </li>
+                            <li>
+                                Logie, Jamie. “Why eBay Can Thank Beanie Babies for Its Early Success.” <em>Medium</em>, 13 May 2025.
+                                <a href="https://archive.ph/ubAdt#selection-389.0-462.0" target="_blank" rel="noopener noreferrer">https://archive.ph/ubAdt#selection-389.0-462.0</a>. Accessed 2 Dec. 2025.
+                            </li>
+                            <li>
+                                Meador, Gina. “Beanie Babies: What Made Them Sell?”. <em>First Flight Agency</em>, 14 May 2022.
+                                <a href="https://firstflightagency.com/2022/03/14/why-did-people-go-crazy-over-beanie-babies/" target="_blank" rel="noopener noreferrer">https://firstflightagency.com/2022/03/14/why-did-people-go-crazy-over-beanie-babies/</a>. Accessed 2 Dec. 2025.
+                            </li>
+                            <li>
+                                Morris, Rebecca J., and Charles L. Martin. “Beanie babies: A case study in the engineering of a high‐involvement/relationship‐prone brand.” <em>Journal of Product &amp; Brand Management</em>, vol. 9, no. 2, 1 Apr. 2000, pp. 78–98, <a href="https://doi.org/10.1108/10610420010322143" target="_blank" rel="noopener noreferrer">https://doi.org/10.1108/10610420010322143</a>. Accessed 2 Dec. 2025.
+                            </li>
+                            <li>
+                                VanderMey, Anne. “Lessons from the Great Beanie Babies Crash.” <em>Fortune</em>, 11 Mar. 2015.
+                                <a href="https://fortune.com/2015/03/11/beanie-babies-failure-lessons/" target="_blank" rel="noopener noreferrer">https://fortune.com/2015/03/11/beanie-babies-failure-lessons/</a>. Accessed 2 Dec. 2025.
+                            </li>
+                        </ul>
+                        
                         </article>
                         
                 )}
