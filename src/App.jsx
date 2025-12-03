@@ -15,7 +15,6 @@ const DATA = [
         notes:"Could they have done this intentionally to create demand...?"
     },
 
-    // ORIGINAL NINE (1993)
     { id:'brownie-cubbie', name:'Brownie/Cubbie', img:'https://i0.wp.com/beaniepedia.com/beanies/files/2019/01/brownie.jpg', category:'Bear', releaseYear:1993, peakYear:1997, peakPriceUSD:20000, currentPriceUSD:7, rarity:'Original 9 / Name Change',
         fun:["Brownie an original 9 Beanie Baby. The name change caused scarcity."],
         notes:"Tags are actually really important to valuations - without tag, your Baby is worth nothing"
@@ -24,34 +23,15 @@ const DATA = [
         fun:["Patti was an original nine Beanie Baby. It went from Magenta, Raspberry, Fuchsia, having the color scarcity thing again."],
         notes:"Im beginning to think it is intentional all these changes caused increase in demand... Magenta was much more valuable than the others."
     },
-    { id:'legs-frog', name:'Legs', img:'https://placehold.co/160x120/008000/ffffff?text=Legs+Frog', category:'Frog', releaseYear:1993, peakYear:1997, peakPriceUSD:500, currentPriceUSD:8, rarity:'Original 9',
-        fun:["Legs was one of the original nine Beanie Babies introduced in 1993."],
-        notes:"Value depends heavily on 1st or 2nd generation tags."
+    { id:'legs-frog', name:'Legs', img:'https://www.bbtoystore.com/mm5/beanies/legsBBOC_540x540.jpg', category:'Frog', releaseYear:1993, peakYear:1998, peakPriceUSD:15, currentPriceUSD:7, rarity:'Original 9',
+        fun:["Legs was a frog Beanie Baby of the Original 9. Probably Jai's favorite one"],
+        notes:"Value didn't actually go that high... not criminally overpriced"
     },
-    { id:'squealer-pig', name:'Squealer', img:'https://placehold.co/160x120/ffc0cb/ffffff?text=Squealer+Pig', category:'Pig', releaseYear:1993, peakYear:1997, peakPriceUSD:350, currentPriceUSD:6, rarity:'Original 9',
-        fun:["Squealer the Pig was part of the very first wave of Beanie Babies released."],
-        notes:"Early versions have a brown nose and thin tail."
+    { id:'splash-whale', name:'Splash', img:'https://i5.walmartimages.com/seo/Ty-Beanie-Baby-Splash-the-Whale-Stuffed-Animal-MWMT_33e0f9c3-dbfc-47e7-b3fa-ae80d666e3e4.ac86144e81465475a06ce9ad726a3cc7.jpeg', category:'Whale', releaseYear:1993, peakYear:1996, peakPriceUSD:370, currentPriceUSD:10, rarity:'Original 9',
+        fun:["Splash the Whale was a big animal in the Original 9"],
+        notes:"Surprisingly valued for a not-so-popular one"
     },
-    { id:'flash-dolphin', name:'Flash', img:'https://placehold.co/160x120/00bfff/ffffff?text=Flash+Dolphin', category:'Dolphin', releaseYear:1993, peakYear:1997, peakPriceUSD:400, currentPriceUSD:7, rarity:'Original 9',
-        fun:["Flash the Dolphin was one of the few aquatic animals in the initial release."],
-        notes:"No known variants; rarity based purely on early tag generation."
-    },
-    { id:'splash-whale', name:'Splash', img:'https://placehold.co/160x120/000080/ffffff?text=Splash+Whale', category:'Whale', releaseYear:1993, peakYear:1997, peakPriceUSD:550, currentPriceUSD:9, rarity:'Original 9',
-        fun:["Splash the Whale was one of the largest animals in the 1993 set."],
-        notes:"The earliest versions are considered the most valuable."
-    },
-    { id:'speckles-leopard', name:'Speckles', img:'https://placehold.co/160x120/8b4513/ffffff?text=Speckles+Leopard', category:'Leopard', releaseYear:1993, peakYear:1997, peakPriceUSD:600, currentPriceUSD:10, rarity:'Original 9',
-        fun:["Speckles the Leopard was part of the first nine and had a pattern that made each one slightly unique."],
-        notes:"An uncommon leopard variant."
-    },
-    { id:'pinchers-lobster', name:'Pinchers', img:'https://placehold.co/160x120/ff0000/ffffff?text=Pinchers+Lobster', category:'Lobster', releaseYear:1993, peakYear:1997, peakPriceUSD:750, currentPriceUSD:11, rarity:'Original 9',
-        fun:["Pinchers was the only crustacean in the original release."],
-        notes:"Later versions are lighter red; the original is darker/maroon."
-    },
-    { id:'spot-dog', name:'Spot', img:'https://placehold.co/160x120/999999/ffffff?text=Spot+Dog', category:'Dog', releaseYear:1993, peakYear:1997, peakPriceUSD:650, currentPriceUSD:10, rarity:'Original 9',
-        fun:["Spot the Dog was initially produced without a spot, making the 'no-spot' version a major rarity within the Original 9."],
-        notes:"The true rarity is the version with NO spot."
-    },
+
 ];
 
 const categories = ['All', ...Array.from(new Set(DATA.map(d => d.category)))];
