@@ -36,7 +36,7 @@ const sorts = [
     { id: 'year', label: 'Release Year' },
 ];
 const money = n => n.toLocaleString(undefined, { style:'currency', currency:'USD', maximumFractionDigits:2 });
-const pctDrop = (p, c) => p ? Math.max(0, Math.min(100, (((p - c) / p) * 100))).toFixed(1) : 0;
+const pctDrop = (p, c) => p ? Math.max(0, Math.min(100, (((p - c) / p) * 100))).toFixed(2) : 0;
 
 export default function App(){
     const [q, setQ] = useState('');
@@ -213,7 +213,7 @@ export default function App(){
                 {page === 'sell' && (
                     <div style={{maxWidth:900, margin:'2rem auto', padding:'0 1rem'}}>
                         <h1>Sell</h1>
-                        <p>Go to Learn to access Supplementary Material! Go to my Bbay for themes/thinking skills.</p>
+                        <p>Go to Learn to access Supplementary Material! Go to my Bbay for themes/thinking skills. The Start Listing button is just for show :)</p>
                         <div style={{marginTop:12}}>
                             <button className="btn" onClick={() => showMessage('Sell flow not implemented in this demo')}>Start listing</button>
                         </div>
